@@ -80,7 +80,7 @@ const Programs = () => {
     return (
         <MainLayout>
             <div>
-                <div className='flex lg:flex-row flex-col-reverse p-2 m-2 items-center justify-center'>
+                <div className='flex lg:flex-row flex-col-reverse p-2 items-center justify-center'>
                     <div className='lg:w-1/2'>
                         <p className='font-bold text-3xl pb-4'>Join Our Exciting Programs</p>
                         <p className='font-medium'>

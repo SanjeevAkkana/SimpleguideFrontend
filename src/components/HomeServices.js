@@ -33,18 +33,18 @@ const HomeServices = () => {
         }
     ]
     return (
-        <div className='p-2 m-2 pt-12'>
+        <div className='p-2 pt-12'>
             <h1 className="text-center text-3xl md:text-4xl font-medium relative mb-12">
-                    <span className="absolute left-0 top-1/2 w-24 h-px bg-blue-500"></span>
+                    <span className="absolute left-0 top-1/2 w-16 h-px bg-blue-500"></span>
                     <span className="relative px-2 font-serif">Services</span>
-                    <span className="absolute right-0 top-1/2 w-24 h-px bg-blue-500"></span>
+                    <span className="absolute right-0 top-1/2 w-16 h-px bg-blue-500"></span>
                 </h1>
-            <div className='grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
+            <div className='grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-4 sm:gap-4'>
                 {services.map((service) => {
                     return (
-                        <div key={service.id} className='px-2 py-6'>
+                        <div key={service.id} className='py-6'>
                             <img className='h-56 w-full object-cover' src={service.image} alt={service.name} />
-                            <div className='p-2'>
+                            <div className=''>
                                 <h5 className="text-xl font-medium py-2 tracking-tight text-gray-900 dark:text-white">
                                     <p>
                                         {service.name}

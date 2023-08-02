@@ -11,8 +11,8 @@ function combineWords(line) {
 
 const HomeHeroSection = () => {
     return (
-        <div className='m-2 p-2'>
-            <div className='flex lg:flex-row flex-col-reverse p-2 m-2 items-center justify-center'>
+        <div className='p-2'>
+            <div className='flex lg:flex-row flex-col-reverse items-center justify-center'>
                 <div className='lg:w-1/2'>
                     <p className='font-bold text-3xl pb-4'>Welcome to <span className='text-blue-500 font-serif'>Simple Guide</span></p>
                     <p className='font-medium'>

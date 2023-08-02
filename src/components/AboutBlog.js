@@ -55,7 +55,7 @@ const AboutBlog = () => {
         ],
     })
     return (
-        <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-4 p-2 m-2 pb-12'>
+        <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-4 p-2 sm:m-2 pb-12'>
             <div className='w-full'>
                 <Tab.Group>
                     <Tab.List className="flex space-x-1 bg-blue-500/20 p-1">
