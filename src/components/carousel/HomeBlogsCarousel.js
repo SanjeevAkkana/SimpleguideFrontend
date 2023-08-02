@@ -17,9 +17,9 @@ const HomeBlogsCarousel = ({ categories }) => {
                 {categories.map((category) => {
                     return (
                         <div key={category._id} className="embla__slide py-6">
-                            <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px]">
-                                <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white ">
-                                    <img src={category.categoryImage} className="dark:hidden w-[272px] h-56 object-cover" alt={category.categoryName} />
+                            <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-[2.5rem] h-[590px] w-[285px]">
+                                <div className="rounded-[2rem] overflow-hidden w-[270px] h-[572px] bg-white ">
+                                    <img src={category.categoryImage} className="dark:hidden w-[270px] h-56 object-cover" alt={category.categoryName} />
                                     <div className='p-2'>
                                         <p className="font-medium text-xl pt-2">{category.categoryName.length > 15 ? <>{category.categoryName.slice(0, 15)}...</> : <>{category.categoryName}</>}</p>
                                         <p className='text-[12px] text-gray-500 '>{category.categorySlogan.slice(0, 35)} ...</p>
