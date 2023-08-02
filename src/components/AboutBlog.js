@@ -55,7 +55,7 @@ const AboutBlog = () => {
         ],
     })
     return (
-        <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-4 p-2 sm:m-2 pb-12'>
+        <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-4 p-2 pb-12'>
             <div className='w-full'>
                 <Tab.Group>
                     <Tab.List className="flex space-x-1 bg-blue-500/20 p-1">
@@ -81,7 +81,7 @@ const AboutBlog = () => {
                             <Tab.Panel
                                 key={idx}
                                 className={classNames(
-                                    'bg-white p-3',
+                                    'bg-white',
                                     'ring-white border-2 border-white-400'
                                 )}
                             >
@@ -89,9 +89,9 @@ const AboutBlog = () => {
                                     {posts.map((post) => (
                                         <li
                                             key={post.id}
-                                            className="relative p-3 hover:bg-gray-100"
+                                            className="relative hover:bg-gray-100"
                                         >
-                                            <h3 className="text-sm font-medium leading-5 flex gap-x-2 items-center">
+                                            <h3 className="text-sm font-medium leading-5 p-4 flex gap-x-2 items-center">
                                                 <AiFillStar className="text-green-500" /> {post.title}
                                             </h3>
                                         </li>
@@ -107,7 +107,7 @@ const AboutBlog = () => {
                     <Tab.Group>
                     <Tab.List className="">
                         <Tab
-                            className="p-2 text-xl font-semibold"
+                            className="text-xl font-semibold"
                         >
                             Frequently asked question :-
                         </Tab>
@@ -118,14 +118,14 @@ const AboutBlog = () => {
                     <Disclosure>
                         {({ open }) => (
                             <>
-                                <Disclosure.Button className="flex w-full justify-between items-center bg-white-100 px-4 py-2 text-left text-sm font-medium text-white-900 hover:bg-blue-200 focus:outline-none focus-visible:ring focus-visible:ring-white-500 focus-visible:ring-opacity-75">
+                                <Disclosure.Button className="flex w-full justify-between items-center bg-white-100 py-2 text-left text-sm font-medium text-white-900 hover:bg-blue-200 focus:outline-none focus-visible:ring focus-visible:ring-white-500 focus-visible:ring-opacity-75">
                                     <span>What is Simple Guide?</span>
                                     <SlArrowUp
                                         className={`${open ? 'rotate-180 transform' : ''
                                             } text-white-500`}
                                     />
                                 </Disclosure.Button>
-                                <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                                <Disclosure.Panel className="px-0 pt-4 pb-2 text-sm text-gray-500">
                                     A simple guide is a concise and user-friendly resource that provides clear instructions or information on a specific topic or process.
                                 </Disclosure.Panel>
                             </>
@@ -134,14 +134,14 @@ const AboutBlog = () => {
                     <Disclosure as="div" className="mt-2">
                         {({ open }) => (
                             <>
-                                <Disclosure.Button className="flex w-full justify-between bg-white-100 px-4 py-2 text-left text-sm font-medium text-white-900 hover:bg-blue-200 focus:outline-none focus-visible:ring focus-visible:ring-white-500 focus-visible:ring-opacity-75">
+                                <Disclosure.Button className="flex w-full justify-between bg-white-100 px-0 py-2 text-left text-sm font-medium text-white-900 hover:bg-blue-200 focus:outline-none focus-visible:ring focus-visible:ring-white-500 focus-visible:ring-opacity-75">
                                     <span>Why Simple Guide?</span>
                                     <SlArrowUp
                                         className={`${open ? 'rotate-180 transform' : ''
                                             } text-white-500`}
                                     />
                                 </Disclosure.Button>
-                                <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                                <Disclosure.Panel className="px-0 pt-4 pb-2 text-sm text-gray-500">
                                     A simple guide offers a straightforward and accessible approach to understanding a topic or completing a task, making it easier for individuals to grasp and apply the information effectively.
                                 </Disclosure.Panel>
                             </>
@@ -150,14 +150,14 @@ const AboutBlog = () => {
                     <Disclosure as="div" className="mt-2">
                         {({ open }) => (
                             <>
-                                <Disclosure.Button className="flex w-full justify-between bg-white-100 px-4 py-2 text-left text-sm font-medium text-white-900 hover:bg-blue-200 focus:outline-none focus-visible:ring focus-visible:ring-white-500 focus-visible:ring-opacity-75">
+                                <Disclosure.Button className="flex w-full justify-between bg-white-100 px-0 py-2 text-left text-sm font-medium text-white-900 hover:bg-blue-200 focus:outline-none focus-visible:ring focus-visible:ring-white-500 focus-visible:ring-opacity-75">
                                     <span>What services do you offer?</span>
                                     <SlArrowUp
                                         className={`${open ? 'rotate-180 transform' : ''
                                             }  text-white-500`}
                                     />
                                 </Disclosure.Button>
-                                <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                                <Disclosure.Panel className="px-0 pt-4 pb-2 text-sm text-gray-500">
                                     We offer comprehensive services in web development, app development, and content creation, providing tailored solutions to enhance your online presence and drive business growth.
                                 </Disclosure.Panel>
                             </>
@@ -166,14 +166,14 @@ const AboutBlog = () => {
                     <Disclosure as="div" className="mt-2">
                         {({ open }) => (
                             <>
-                                <Disclosure.Button className="flex w-full justify-between bg-white-100 px-4 py-2 text-left text-sm font-medium text-white-900 hover:bg-blue-200 focus:outline-none focus-visible:ring focus-visible:ring-white-500 focus-visible:ring-opacity-75">
+                                <Disclosure.Button className="flex w-full justify-between bg-white-100 px-0 py-2 text-left text-sm font-medium text-white-900 hover:bg-blue-200 focus:outline-none focus-visible:ring focus-visible:ring-white-500 focus-visible:ring-opacity-75">
                                     <span>Do you offer technical support?</span>
                                     <SlArrowUp
                                         className={`${open ? 'rotate-180 transform' : ''
                                             } text-white-500`}
                                     />
                                 </Disclosure.Button>
-                                <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                                <Disclosure.Panel className="px-0 pt-4 pb-2 text-sm text-gray-500">
                                     Yes.
                                 </Disclosure.Panel>
                             </>
@@ -182,14 +182,14 @@ const AboutBlog = () => {
                     <Disclosure as="div" className="mt-2">
                         {({ open }) => (
                             <>
-                                <Disclosure.Button className="flex w-full justify-between bg-white-100 px-4 py-2 text-left text-sm font-medium text-white-900 hover:bg-blue-200 focus:outline-none focus-visible:ring focus-visible:ring-white-500 focus-visible:ring-opacity-75">
+                                <Disclosure.Button className="flex w-full justify-between bg-white-100 px-0 py-2 text-left text-sm font-medium text-white-900 hover:bg-blue-200 focus:outline-none focus-visible:ring focus-visible:ring-white-500 focus-visible:ring-opacity-75">
                                     <span>How can I contact the Simple Guide?</span>
                                     <SlArrowUp
                                         className={`${open ? 'rotate-180 transform' : ''
                                             } text-white-500`}
                                     />
                                 </Disclosure.Button>
-                                <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                                <Disclosure.Panel className="px-0 pt-4 pb-2 text-sm text-gray-500">
                                 You can contact the Simple Guide at +917075972027 or via email at simpleguidechannel@gmail.com
                                 </Disclosure.Panel>
                             </>
