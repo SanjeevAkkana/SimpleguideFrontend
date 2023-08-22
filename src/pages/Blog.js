@@ -86,7 +86,7 @@ const Blog = () => {
             </Helmet>
             <div className="min-h-screen mx-auto w-full md:w-11/12 lg:w-10/12">
               <h1 className="text-2xl md:text-3xl font-bold mb-4 text-center w-full mx-auto">{blog.title}</h1>
-              <img className='w-full mx-auto md:h-96 h-64 object-contain !important mt-8' src={blog.blogImage} alt={blog.title} />
+              <img className='w-full mx-auto md:h-96 h-64 object-cover mt-8' src={blog.blogImage} alt={blog.title} />
               <div className='flex items-center py-4 justify-center'>
                 <p className='font-medium text-sm'><a href={`/author/${combineWords(blog.author)}`}>{blog.author}</a></p>
                 <BsDot />
