@@ -194,7 +194,7 @@ const Blog = () => {
               </div>
               {/* Questions */}
               {
-                blog.questions>1
+                blog.questions.length>1
                   ?
                   <div>
                     <p className='text-2xl font-semibold py-6'>Frequently asked question :-</p>
