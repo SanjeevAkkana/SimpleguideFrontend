@@ -43,7 +43,7 @@ const LinkSeperate = (text) => {
 
     return (
       <p className=''>
-        <span className="font-bold">{beforeColon} </span>
+        <span className="font-bold">{beforeColon}: </span>
         <span className='text-blue-500'><a href={afterColon}>{afterColon}</a></span>
       </p>
     );
@@ -118,7 +118,7 @@ const Blog = () => {
                                   {
                                     section.image
                                       ?
-                                      <img className='px-12 w-full md:h-96 h-64 object-fill rounded-md' src={section.image} alt={section.title} />
+                                      <img className='w-full md:h-96 h-64 object-fill rounded-md' src={section.image} alt={section.title} />
                                       :
                                       <></>
                                   }
@@ -151,11 +151,11 @@ const Blog = () => {
                                   {
                                     section.image
                                       ?
-                                      <img className='px-12 w-full md:h-96 h-64 object-fill rounded-md' src={section.image} alt={section.title} />
+                                      <img className='w-full md:h-96 h-64 object-fill rounded-md' src={section.image} alt={section.title} />
                                       :
                                       <></>
                                   }
-                                  <p className='text-xl font-bold pb-4'>
+                                  <p className='text-xl font-bold pb-4 pt-6'>
                                     {section.title}
                                   </p>
                                   <ol>
