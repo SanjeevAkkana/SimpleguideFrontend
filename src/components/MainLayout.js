@@ -15,10 +15,10 @@ const MainLayout = ({ children }) => {
             transition={{ duration: 0.3 }}
             className='bg-white'>
             <div className="fixed z-20 backdrop-blur-lg p-2 bottom-0 right-0 flex items-center gap-6">
-                <a href="https://www.youtube.com/@simple_guide" className="text-red-500" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/_simpleguide_/" className="text-red-500" target="_blank" rel="noopener noreferrer">
                     <FaInstagram size={24} />
                 </a>
-                <a href="https://www.instagram.com/_simpleguide_/" className="text-red-700" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/@simple_guide/" className="text-red-700" target="_blank" rel="noopener noreferrer">
                     <FaYoutube size={24} />
                 </a>
                 <a href="https://medium.com/@simpleguidechannel" className="text-black" target="_blank" rel="noopener noreferrer">
