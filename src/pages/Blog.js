@@ -44,7 +44,7 @@ const LinkSeperate = (text) => {
     return (
       <p className=''>
         <span className="font-bold">{beforeColon} </span>
-        <span className='text-blue-500'>{afterColon}</span>
+        <span className='text-blue-500'><a href={afterColon}>{afterColon}</a></span>
       </p>
     );
   } else {
@@ -54,7 +54,7 @@ const LinkSeperate = (text) => {
           <BsDot size={30} />
         </div>
         <div className=''>
-          {text}
+          <a href={text}>{text}</a>
         </div>
       </div>
     );
@@ -138,7 +138,7 @@ const Blog = () => {
                                     section.link
                                       ?
                                       <p className='py-2'>
-                                        <a href={`${section.link}`}>{LinkSeperate(section.link)}</a>
+                                        {LinkSeperate(section.link)}
                                       </p>
                                       :
                                       <></>
@@ -151,7 +151,7 @@ const Blog = () => {
                                   {
                                     section.image
                                       ?
-                                      <img className='w-full md:w-1/2 lg:w-1/3' src={section.image} alt={section.title} />
+                                      <img className='w-full md:h-96 h-64 object-cover rounded-md' src={section.image} alt={section.title} />
                                       :
                                       <></>
                                   }
