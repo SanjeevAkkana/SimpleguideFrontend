@@ -118,7 +118,7 @@ const Blog = () => {
                                   {
                                     section.image
                                       ?
-                                      <img className='w-full md:h-96 h-64 object-fill rounded-md' src={section.image} alt={section.title} />
+                                      <img className='px-12 w-full md:h-96 h-64 object-fill rounded-md' src={section.image} alt={section.title} />
                                       :
                                       <></>
                                   }
@@ -151,7 +151,7 @@ const Blog = () => {
                                   {
                                     section.image
                                       ?
-                                      <img className='w-full md:h-96 h-64 object-fill rounded-md' src={section.image} alt={section.title} />
+                                      <img className='px-12 w-full md:h-96 h-64 object-fill rounded-md' src={section.image} alt={section.title} />
                                       :
                                       <></>
                                   }
